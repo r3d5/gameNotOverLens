@@ -3,7 +3,7 @@
     "document_id": "J2MRlxMSu0VZy_i_-ugN",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1604606917246",
+    "lastChanged": "1604610591107",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -40,6 +40,9 @@
                     ],
                     [
                         "Instant Photo"
+                    ],
+                    [
+                        "Light_Winows_Fake"
                     ],
                     [
                         "Materials"
@@ -1408,9 +1411,6 @@
                         "PortalMusic"
                     ],
                     [
-                        "ROOM TEXTURES"
-                    ],
-                    [
                         "ROOM TEXTURES",
                         "1-fine-wood-seamless"
                     ],
@@ -1425,6 +1425,10 @@
                     [
                         "ROOM TEXTURES",
                         "SOL_polySurface280SG_BaseColor_nm-(1)"
+                    ],
+                    [
+                        "ROOM TEXTURES",
+                        "fale_volume_light_window"
                     ],
                     [
                         "ROOM TEXTURES",
@@ -3123,6 +3127,7 @@
                     "1604535244154644:263032",
                     "1604535245459890:265962",
                     "1604535245708303:266437",
+                    "1604600502179905:225421",
                     "1604600502282075:225602",
                     "1604600502328588:225998",
                     "1604600502331013:226000",
@@ -7622,6 +7627,22 @@
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
+                },
+                {
+                    "resId": "4334",
+                    "uid": "1604609805549481:116014",
+                    "name": "Files\/File835",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "4335",
+                    "uid": "1604609838025035:139468",
+                    "name": "Files\/File837.png",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
                 }
             ],
             "MaterialUpdateManager": {
@@ -8227,7 +8248,29 @@
                 "579": "1604583305713957:395138",
                 "580": "1604587271895312:1027618",
                 "581": "1604600176641554:172488",
-                "582": "1604600502179905:225421"
+                "582": "1604600502179905:225421",
+                "583": "1604600502181958:225423",
+                "584": "1604600502183279:225425",
+                "585": "1604600502184580:225427",
+                "586": "1604600502185703:225429",
+                "587": "1604600502246210:225500",
+                "588": "1604600502251503:225514",
+                "589": "1604600502262848:225520",
+                "590": "1604600502273563:225530",
+                "591": "1604600502282075:225602",
+                "592": "1604600502293005:225709",
+                "593": "1604600502295860:225726",
+                "594": "1604600502300229:225782",
+                "595": "1604600502304812:225786",
+                "596": "1604600502313957:225896",
+                "597": "1604600502323953:225934",
+                "598": "1604600502328588:225998",
+                "599": "1604600502331013:226000",
+                "600": "1604600502333091:226002",
+                "601": "1604600502336920:226004",
+                "602": "1604600502430456:226257",
+                "603": "1604600502521476:226510",
+                "604": "1604600502524409:226512"
             }
         },
         "LayerComponent": {
@@ -11561,6 +11604,22 @@
                 {
                     "k": "834",
                     "v": "Files\/File834.js"
+                },
+                {
+                    "k": "835",
+                    "v": "Files\/File835"
+                },
+                {
+                    "k": "836",
+                    "v": "Files\/File836.lsmat"
+                },
+                {
+                    "k": "837",
+                    "v": "Files\/File837.png"
+                },
+                {
+                    "k": "838",
+                    "v": "Files\/File838.png"
                 }
             ]
         },
@@ -12752,6 +12811,14 @@
                     {
                         "k": "879",
                         "v": "OnApproach.js"
+                    },
+                    {
+                        "k": "880",
+                        "v": "Light_Winows_Fake.lsmat"
+                    },
+                    {
+                        "k": "881",
+                        "v": "ROOM TEXTURES\/fale_volume_light_window.png"
                     }
                 ],
                 "hashes": [
@@ -13689,11 +13756,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "bba3327828f9f842269072f49665249d"
+                        "v": "bd6f209b7a700d4dabf843566f280544"
                     },
                     {
                         "k": "834",
-                        "v": "2e05b0ed0d4a4056a076c613bcf1cd5b"
+                        "v": "1501c26c389815749500a5540bb8d25b"
                     },
                     {
                         "k": "835",
@@ -13705,7 +13772,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "e544a35fb1068d3480aef113badf5b08"
+                        "v": "db7443c8b492bcbef3585008ceec3fc2"
                     },
                     {
                         "k": "838",
@@ -13753,7 +13820,7 @@
                     },
                     {
                         "k": "850",
-                        "v": "479f59d645f53823750e8ac2a45e79a7"
+                        "v": "aa83e9b42d8e70dd0a46a821fbe04841"
                     },
                     {
                         "k": "851",
@@ -13761,7 +13828,7 @@
                     },
                     {
                         "k": "852",
-                        "v": "68aee58fbb66aab39d473d5cb748e888"
+                        "v": "fde1e4723272d07a74b94001038a8191"
                     },
                     {
                         "k": "853",
@@ -13821,15 +13888,15 @@
                     },
                     {
                         "k": "873",
-                        "v": "cc5ae25df7ce5bbaf95eb251edaf6f49"
+                        "v": "61bcc356c88dcfac18c5b60ce904108c"
                     },
                     {
                         "k": "874",
-                        "v": "7a6954de1281fee0b7b53aee12d070a2"
+                        "v": "c8f1f6b3d8bf4db8f2b6ebf1157a591a"
                     },
                     {
                         "k": "875",
-                        "v": "e81d11eff7ba5a6b84fc13d6fcb33426"
+                        "v": "b9646383d296aeb57079b6d16d75043c"
                     },
                     {
                         "k": "878",
@@ -13838,20 +13905,28 @@
                     {
                         "k": "879",
                         "v": "b0890fbde73b02b84a8e483d5d65bfd3"
+                    },
+                    {
+                        "k": "880",
+                        "v": "59092f7bc79a6df2781ed82ec60e21eb"
+                    },
+                    {
+                        "k": "881",
+                        "v": "600197563ed27e2e4cf27bf29e0e25f2"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-05T21:03:43",
+                        "lastModified": "2020-11-05T22:08:21",
                         "name": "Public",
-                        "hash": "ca483d8ab06194580fee8ec88cea58a7",
+                        "hash": "8d9fca5d2cad76ffc16dabc2189eefe3",
                         "children": [
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T21:51:34",
                                 "name": "Analog TV.lsmat",
-                                "hash": "652535171cc221c33b32a18afab95b36",
+                                "hash": "e544a35fb1068d3480aef113badf5b08",
                                 "children": ""
                             },
                             {
@@ -13877,9 +13952,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T21:51:33",
                                 "name": "Gauss Blur.lsmat",
-                                "hash": "cfed58e41ed49bc69ad825adf2aa7d33",
+                                "hash": "bba3327828f9f842269072f49665249d",
                                 "children": ""
                             },
                             {
@@ -13887,6 +13962,13 @@
                                 "lastModified": "2020-11-05T21:03:43",
                                 "name": "Instant Photo.png",
                                 "hash": "4806da6e95d1e0b6d56f3af9faa79eba",
+                                "children": ""
+                            },
+                            {
+                                "isFolder": "false",
+                                "lastModified": "2020-11-05T22:08:21",
+                                "name": "Light_Winows_Fake.lsmat",
+                                "hash": "59092f7bc79a6df2781ed82ec60e21eb",
                                 "children": ""
                             },
                             {
@@ -15182,9 +15264,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T22:00:53",
                                 "name": "ROOM TEXTURES",
-                                "hash": "1006c754c8999b91a1858b85918480ac",
+                                "hash": "2c9be466a3796cbe7a23925ef76c076e",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -15205,6 +15287,13 @@
                                         "lastModified": "2020-11-05T21:03:43",
                                         "name": "90R_diffuse_nm.jpg",
                                         "hash": "b32940ab50487184a9574ac1fcd40a0b",
+                                        "children": ""
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2020-11-05T22:00:22",
+                                        "name": "fale_volume_light_window.png",
+                                        "hash": "600197563ed27e2e4cf27bf29e0e25f2",
                                         "children": ""
                                     },
                                     {
@@ -15529,9 +15618,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T21:51:34",
                                 "name": "Toon.lsmat",
-                                "hash": "bdeb96dbfa531f6c17d1038d461bd97d",
+                                "hash": "68aee58fbb66aab39d473d5cb748e888",
                                 "children": ""
                             },
                             {
@@ -15545,13 +15634,13 @@
                                 "isFolder": "true",
                                 "lastModified": "2020-11-05T21:03:43",
                                 "name": "Tween",
-                                "hash": "e81ee132faf99ddf53d889f418237d48",
+                                "hash": "61de7b3a03e30c2879ce91918ed9c208",
                                 "children": [
                                     {
                                         "isFolder": "true",
                                         "lastModified": "2020-11-05T21:03:43",
                                         "name": "ExampleResources [REMOVE_ME]",
-                                        "hash": "d15bbf5fb9e2e65b0237b10a148e20ea",
+                                        "hash": "038acbb6b2c635c6d0352deb777ffbf5",
                                         "children": [
                                             {
                                                 "isFolder": "false",
@@ -15569,9 +15658,9 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-05T21:06:02",
+                                                "lastModified": "2020-11-05T21:51:56",
                                                 "name": "Materials",
-                                                "hash": "b4b61f006a5e0a84bff1e19edfb3fe9d",
+                                                "hash": "618d2cf1972504f244145e011398c3bf",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
@@ -15582,23 +15671,23 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2020-11-05T21:06:02",
+                                                        "lastModified": "2020-11-05T21:51:56",
                                                         "name": "TweenBoxDiffuse.lsmat",
-                                                        "hash": "cc5ae25df7ce5bbaf95eb251edaf6f49",
+                                                        "hash": "61bcc356c88dcfac18c5b60ce904108c",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2020-11-05T21:06:02",
+                                                        "lastModified": "2020-11-05T21:51:56",
                                                         "name": "TweenBoxDiffuse_Alt.lsmat",
-                                                        "hash": "7a6954de1281fee0b7b53aee12d070a2",
+                                                        "hash": "c8f1f6b3d8bf4db8f2b6ebf1157a591a",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2020-11-05T21:06:02",
+                                                        "lastModified": "2020-11-05T21:51:56",
                                                         "name": "TweenSphereDiffuse.lsmat",
-                                                        "hash": "e81d11eff7ba5a6b84fc13d6fcb33426",
+                                                        "hash": "b9646383d296aeb57079b6d16d75043c",
                                                         "children": ""
                                                     }
                                                 ]
@@ -15775,9 +15864,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T21:51:33",
                                 "name": "VHS.lsmat",
-                                "hash": "975bb8740b97de6cda480abb27cf68a5",
+                                "hash": "2e05b0ed0d4a4056a076c613bcf1cd5b",
                                 "children": ""
                             },
                             {
@@ -15796,9 +15885,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-05T21:03:43",
+                                "lastModified": "2020-11-05T21:51:34",
                                 "name": "Wood.lsmat",
-                                "hash": "207d3d2a2b84f7a85e93100bfe8b2e98",
+                                "hash": "479f59d645f53823750e8ac2a45e79a7",
                                 "children": ""
                             }
                         ]
@@ -23285,6 +23374,19 @@
                                 "publicId": "853",
                                 "source": "C:\/Users\/vosk9\/Downloads\/SOL_polySurface280SG_BaseColor_nm-(1).jpg",
                                 "additional": ""
+                            },
+                            {
+                                "name": "fale_volume_light_window",
+                                "type": "1",
+                                "subtype": "9",
+                                "resourceId": "4335",
+                                "dependency": "0",
+                                "uid": "1604609838025035:139468",
+                                "fileId": "837",
+                                "originalId": "838",
+                                "publicId": "881",
+                                "source": "D:\/Documents\/@ SNAPCHAT\/@ RESIDENT\/fale_volume_light_window.png",
+                                "additional": ""
                             }
                         ]
                     },
@@ -23705,6 +23807,19 @@
                         "originalId": "18446744073709551615",
                         "publicId": "879",
                         "source": "\/private\/var\/folders\/03\/f4l9nhj93dl2fhr364mw5rrm0000gn\/T\/Lens Studio-ydibST\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                        "additional": ""
+                    },
+                    {
+                        "name": "Light_Winows_Fake",
+                        "type": "2",
+                        "subtype": "0",
+                        "resourceId": "4334",
+                        "dependency": "0",
+                        "uid": "1604609805549481:116014",
+                        "fileId": "835",
+                        "originalId": "836",
+                        "publicId": "880",
+                        "source": "",
                         "additional": ""
                     }
                 ]
