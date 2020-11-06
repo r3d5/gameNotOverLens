@@ -14,5 +14,5 @@ event.bind(function(eventData) {
     script.tweenName
   )
   // set the light's intensity to the tween value:
-  script.light.color = tweenValue
+  script.light.envmapRotation = tweenValue
 })
