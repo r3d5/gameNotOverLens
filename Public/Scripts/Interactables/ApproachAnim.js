@@ -101,7 +101,7 @@ function onApproach(eventData) {
             if (script.api.idleAnimAudio && script.api.idleAnimAudio.isPlaying()) {
                 script.api.idleAnimAudio.stop(false);
             }
-
+             print("start")
             playApproachAnimAudio(audioComponentStart, 1);
         }
     }
@@ -109,30 +109,32 @@ function onApproach(eventData) {
 
 // Function for handling the approach anim loop that comes after the reaction
 function approachStartAnimEndCallback() {
-    script.canReset = false;
-    if (script.approachLoopAnimLayer && script.approachLoopAnimLayer != "") {
-        print("ApproachAnim: Approach Loop Start");
-
-        // Set the weight of the approach start anim to 0 before our next anim
-        if (script.api.animMixer.getLayer(script.approachStartAnimLayer)) {
-            script.api.animMixer.getLayer(script.approachStartAnimLayer).weight = 0.0;
-        }
-
-        // this animation loops so we don't use the start with callback function
-        if (script.api.animMixer.getLayer(script.approachLoopAnimLayer)) {
-            script.api.animMixer.start(script.approachLoopAnimLayer, 0, -1);
-            script.api.animMixer.getLayer(script.approachLoopAnimLayer).weight = 1.0;
-        }
-
-        // Just as above we only play audio if one has been defined
-        stopApproachAnimAudio(audioComponentStart);
-        playApproachAnimAudio(audioComponentLoop, -1);
-    }
+//    script.canReset = false;
+//    if (script.approachLoopAnimLayer && script.approachLoopAnimLayer != "") {
+//        print("ApproachAnim: Approach Loop Start");
+//
+//        // Set the weight of the approach start anim to 0 before our next anim
+//        if (script.api.animMixer.getLayer(script.approachStartAnimLayer)) {
+//            script.api.animMixer.getLayer(script.approachStartAnimLayer).weight = 0.0;
+//        }
+//
+//        // this animation loops so we don't use the start with callback function
+//        if (script.api.animMixer.getLayer(script.approachLoopAnimLayer)) {
+//            script.api.animMixer.start(script.approachLoopAnimLayer, 0, -1);
+//            script.api.animMixer.getLayer(script.approachLoopAnimLayer).weight = 1.0;
+//        }
+//
+//        // Just as above we only play audio if one has been defined
+//        stopApproachAnimAudio(audioComponentStart);
+//        playApproachAnimAudio(audioComponentLoop, -1);
+//    }
 }
 
 function playApproachAnimAudio(audioComponent, loops) {
     if (audioComponent) {
         if (audioComponent.isPlaying()) {
+                    print("finish")
+
             audioComponent.stop(false);
         }
         audioComponent.play(loops);
