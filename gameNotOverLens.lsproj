@@ -3,7 +3,7 @@
     "document_id": "VBcjvY8rTgdKUYayhQFT",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605227716573",
+    "lastChanged": "1605228055009",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -12277,11 +12277,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "2157ac4b45a42ec518d387a37f5c2ed0"
+                        "v": "1e39fa99f6060ec607a36a665a0cf589"
                     },
                     {
                         "k": "834",
-                        "v": "5cd7d66ca5b8207552c376e519bca675"
+                        "v": "66bff7d2f4b9f19ecd71fc3308b82080"
                     },
                     {
                         "k": "835",
@@ -12293,7 +12293,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "baa5054200b918cf1f125b78f8cc4fef"
+                        "v": "f32b7930108b4cc0424a206f6d765d90"
                     },
                     {
                         "k": "838",
@@ -12827,13 +12827,13 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-13T01:34:35",
+                        "lastModified": "2020-11-13T01:35:12",
                         "name": "Public",
-                        "hash": "2cbc6f35433303f37aa375b09e5d452f",
+                        "hash": "a17e73ffd49c487c876a2b9a9e2c55b6",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Textures",
                                 "hash": "bff5f9389f27297d192d8252a1eb7dba",
                                 "children": [
@@ -12939,13 +12939,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Tween",
                                 "hash": "ac12a3c425e97db9b77e308bd47989f9",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:34:35",
+                                        "lastModified": "2020-11-13T01:35:12",
                                         "name": "TweenTypes",
                                         "hash": "5af3494c14c9b943ba6ae86bfdbe8caa",
                                         "children": [
@@ -12972,7 +12972,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Legacy",
                                                 "hash": "5699726607f054d308421cd35b90b194",
                                                 "children": [
@@ -13024,19 +13024,19 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:34:35",
+                                        "lastModified": "2020-11-13T01:35:12",
                                         "name": "ExampleResources [REMOVE_ME]",
                                         "hash": "49fefe51731ca0306b45b84efc2f3d74",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Textures",
                                                 "hash": "d1fc457a96aa3082bbd3a8ef3daaad47",
                                                 "children": [
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2020-11-13T01:34:35",
+                                                        "lastModified": "2020-11-13T01:35:12",
                                                         "name": "TweenImageTextures",
                                                         "hash": "256b1775c79a3f9e9ec85ac29b878ef1",
                                                         "children": [
@@ -13067,7 +13067,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Materials",
                                                 "hash": "c498cea9bf82333e79bc803a367bb5d2",
                                                 "children": [
@@ -13103,7 +13103,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Meshes",
                                                 "hash": "e5099bda0e905939a22472d2f32cf86f",
                                                 "children": [
@@ -13164,7 +13164,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "NB Models (Template)",
                                 "hash": "2257efcfd138c6d26b329ab08a08893f",
                                 "children": [
@@ -13200,15 +13200,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:39:28",
                                 "name": "LUTs for main camera",
-                                "hash": "a410030f7c34ac4514085f07b5a6c0e8",
+                                "hash": "d66d969637a58fccad85b7a192dd67bf",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T01:34:35",
+                                        "lastModified": "2020-11-13T01:39:28",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "01093fae967938376cc1952ae3ccf46a",
+                                        "hash": "378f9839efd581d1ea4ae29971682f69",
                                         "children": ""
                                     },
                                     {
@@ -13220,9 +13220,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T01:34:34",
+                                        "lastModified": "2020-11-13T01:39:27",
                                         "name": "VHS.lsmat",
-                                        "hash": "4a8ea4488acbb80b0ca36daa162f281f",
+                                        "hash": "cec3778cb02ded1c598949e9ff3282e2",
                                         "children": ""
                                     },
                                     {
@@ -13234,9 +13234,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T01:34:34",
+                                        "lastModified": "2020-11-13T01:39:27",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "673a3b38e62cc34c207d575aecb44b79",
+                                        "hash": "b00347856d77bee4b3f7c190f45bc636",
                                         "children": ""
                                     },
                                     {
@@ -13257,7 +13257,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "3D ROOM TEXTURES + MATERIALS MISC",
                                 "hash": "1f5eaf19ead6fbcb14f8019bfc98ab4b",
                                 "children": [
@@ -13489,7 +13489,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "NB Materials (Template)",
                                 "hash": "50eb9c57a072b40139585e179cdf28d9",
                                 "children": [
@@ -13546,7 +13546,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Room Sounds",
                                 "hash": "47591387547caa58f629701a334ebca4",
                                 "children": [
@@ -13575,13 +13575,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Scripts",
                                 "hash": "38e7e221c0655bedb717f8b9cf8a69e2",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:34:35",
+                                        "lastModified": "2020-11-13T01:35:12",
                                         "name": "Interactables",
                                         "hash": "766a38da0fc08f450d5811f09703a390",
                                         "children": [
@@ -13661,7 +13661,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Fake Light Render (Bloom)",
                                 "hash": "937a4fa449448c57e182a6c4962bc01a",
                                 "children": [
@@ -13688,13 +13688,13 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:34:35",
+                                        "lastModified": "2020-11-13T01:35:12",
                                         "name": "room_lowpoly_008_rdy4exp_CM_1",
                                         "hash": "115b91dd8391a09650f07ad5010eadbf",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Materials",
                                                 "hash": "77499d1561de4471ef94a9bba084d5f5",
                                                 "children": [
@@ -13723,7 +13723,7 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2020-11-13T01:34:35",
+                                                "lastModified": "2020-11-13T01:35:12",
                                                 "name": "Meshes",
                                                 "hash": "8713640841ab7b756c6be69111ec5bd4",
                                                 "children": [
@@ -14092,7 +14092,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "Characters",
                                 "hash": "112a7748f158e0de8a98c2f60c4e971e",
                                 "children": [
@@ -14135,7 +14135,7 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:34:35",
+                                "lastModified": "2020-11-13T01:35:12",
                                 "name": "NEW Scripts (Fan + etc)",
                                 "hash": "3792092d02eccb83dfbabd6b05526f1c",
                                 "children": [
@@ -20686,7 +20686,11 @@
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "objects": [
+                    "1604537488511177:825117"
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
