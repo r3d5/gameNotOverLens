@@ -3,7 +3,7 @@
     "document_id": "M7av4ZbaueaF9ED4mM7v",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605224145769",
+    "lastChanged": "1605225561030",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1694,6 +1694,9 @@
                         "vhs_glitch-min"
                     ],
                     [
+                        "Characters"
+                    ],
+                    [
                         "Characters",
                         "boyAnims",
                         "Animations"
@@ -2393,11 +2396,16 @@
                         "vhs_music_loop"
                     ],
                     [
-                        "Scripts"
+                        "Scripts",
+                        "DayNightCycle"
                     ],
                     [
                         "Scripts",
                         "GroundGrid"
+                    ],
+                    [
+                        "Scripts",
+                        "Interactables"
                     ],
                     [
                         "Scripts",
@@ -2500,9 +2508,6 @@
                     [
                         "Textures",
                         "white"
-                    ],
-                    [
-                        "Tween"
                     ],
                     [
                         "Tween",
@@ -2616,7 +2621,6 @@
         "SceneTreeUiComponent": {
             "collapsedList": [
                 [
-                    "101:100",
                     "1507215332717969:129907",
                     "1507288390336216:79775",
                     "1507289825478155:111692",
@@ -2669,11 +2673,6 @@
                     "1526438704079535:5763",
                     "1526438788344297:8802",
                     "1526438788344371:8806",
-                    "1526502511256197:57316",
-                    "1526929479511000:6780",
-                    "1526935308909861:63762",
-                    "1526935308909952:63766",
-                    "1526935308910006:63770",
                     "1526940772818973:179145",
                     "1526940772819073:179149",
                     "1526940772824194:179173",
@@ -2682,21 +2681,14 @@
                     "1526941938558153:273771",
                     "1526941938562106:273791",
                     "1526941938563541:273801",
-                    "1526945588743343:402207",
                     "1526945588758209:402293",
-                    "1604535244289870:263367",
-                    "1604535244290777:263369",
-                    "1604535244298689:263390",
-                    "1604535244312664:263415",
                     "1604600502282075:225602",
                     "1604600502328588:225998",
                     "1604600502331013:226000",
                     "1604600502333091:226002",
                     "1604600502336920:226004",
                     "1604600502430456:226257",
-                    "1604600502521476:226510",
-                    "1605018570430321:275514",
-                    "1605018570725551:276056"
+                    "1604600502521476:226510"
                 ]
             ]
         },
@@ -6336,6 +6328,14 @@
                     "resId": "4475",
                     "uid": "1605222508361836:261932",
                     "name": "Files\/File1026",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "4476",
+                    "uid": "1605224368077409:1016667",
+                    "name": "Files\/File1028.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -10453,6 +10453,10 @@
                 {
                     "k": "1027",
                     "v": "Files\/File1027.lsmat"
+                },
+                {
+                    "k": "1028",
+                    "v": "Files\/File1028.js"
                 }
             ]
         },
@@ -11332,6 +11336,10 @@
                     {
                         "k": "991",
                         "v": "Characters\/father.lsmat"
+                    },
+                    {
+                        "k": "992",
+                        "v": "Scripts\/DayNightCycle.js"
                     }
                 ],
                 "hashes": [
@@ -12269,11 +12277,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "0f68c8423ddc95621b7d89ca155b3b5c"
+                        "v": "2e7b42a4fc04982582c8ca9bc072789c"
                     },
                     {
                         "k": "834",
-                        "v": "03695ad872103c1739349fe68b670f2e"
+                        "v": "bf016141c15084821cae37c096f37df2"
                     },
                     {
                         "k": "835",
@@ -12285,7 +12293,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "b9b6b6052192b69eee7cdec39d2be248"
+                        "v": "a60b01d6fa87b9e548e970a17391d349"
                     },
                     {
                         "k": "838",
@@ -12393,7 +12401,7 @@
                     },
                     {
                         "k": "870",
-                        "v": "652d069524e3e081774ab247a27236be"
+                        "v": "f6cc7fbc55c428f3d458165aa8f8bdfd"
                     },
                     {
                         "k": "871",
@@ -12810,6 +12818,10 @@
                     {
                         "k": "991",
                         "v": "5ec4070db035dadad1bee36d53f0c65c"
+                    },
+                    {
+                        "k": "992",
+                        "v": "3cda2db499a6248e9b1aff127dbf6694"
                     }
                 ],
                 "publicState": {
@@ -12817,7 +12829,7 @@
                         "isFolder": "true",
                         "lastModified": "2020-11-13T00:08:34",
                         "name": "Public",
-                        "hash": "0636d63424fdb684459a1ba506cd4405",
+                        "hash": "4fd3b1eda7a4ffb9a0685dcdb63092ea",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -12929,7 +12941,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2020-11-06T02:35:35",
                                 "name": "Tween",
-                                "hash": "22d6359bde8a9c4d58f03b47599ea057",
+                                "hash": "8df9fe206387f815544d3fff99911b7b",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -13012,9 +13024,9 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-06T02:35:35",
+                                        "lastModified": "2020-11-13T00:57:51",
                                         "name": "ExampleResources [REMOVE_ME]",
-                                        "hash": "536b60e94c7e988f3ba4cd43ac91cbf3",
+                                        "hash": "fe9d421ff92f3a6b2545811f0511e427",
                                         "children": [
                                             {
                                                 "isFolder": "true",
@@ -13113,9 +13125,9 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2020-11-05T21:16:31",
+                                                "lastModified": "2020-11-13T00:57:51",
                                                 "name": "ExampleTweenValueScript.js",
-                                                "hash": "652d069524e3e081774ab247a27236be",
+                                                "hash": "f6cc7fbc55c428f3d458165aa8f8bdfd",
                                                 "children": ""
                                             },
                                             {
@@ -13188,15 +13200,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T00:35:16",
+                                "lastModified": "2020-11-13T00:59:09",
                                 "name": "LUTs for main camera",
-                                "hash": "4b19e8f17587d1679b38a2f0621e7f17",
+                                "hash": "8b0c50c87a0725f2e229c95ed252d6fc",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T00:35:16",
+                                        "lastModified": "2020-11-13T00:59:09",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "0a5600ad405e209a413d960bb435e401",
+                                        "hash": "5c2800da40263d61597e0a716df0b895",
                                         "children": ""
                                     },
                                     {
@@ -13208,9 +13220,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T00:35:16",
+                                        "lastModified": "2020-11-13T00:59:09",
                                         "name": "VHS.lsmat",
-                                        "hash": "f7f55708d405e0d414bc06ad7e1bbd05",
+                                        "hash": "65359ba86e948d2b386fad2cf5875fba",
                                         "children": ""
                                     },
                                     {
@@ -13222,9 +13234,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T00:35:16",
+                                        "lastModified": "2020-11-13T00:59:09",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "c765bd7e418577d0a7b5ba42d95e41a8",
+                                        "hash": "2ab9b65300e357afec447541b2593abf",
                                         "children": ""
                                     },
                                     {
@@ -13563,9 +13575,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-11T03:12:17",
+                                "lastModified": "2020-11-13T00:39:28",
                                 "name": "Scripts",
-                                "hash": "11a895c67d7012f09adf8d28cd3064a8",
+                                "hash": "38e7e221c0655bedb717f8b9cf8a69e2",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -13602,6 +13614,13 @@
                                                 "children": ""
                                             }
                                         ]
+                                    },
+                                    {
+                                        "isFolder": "false",
+                                        "lastModified": "2020-11-13T00:39:18",
+                                        "name": "DayNightCycle.js",
+                                        "hash": "3cda2db499a6248e9b1aff127dbf6694",
+                                        "children": ""
                                     },
                                     {
                                         "isFolder": "false",
@@ -14717,6 +14736,19 @@
                                 "originalId": "18446744073709551615",
                                 "publicId": "30",
                                 "source": "",
+                                "additional": ""
+                            },
+                            {
+                                "name": "DayNightCycle",
+                                "type": "4",
+                                "subtype": "0",
+                                "resourceId": "4476",
+                                "dependency": "0",
+                                "uid": "1605224368077409:1016667",
+                                "fileId": "1028",
+                                "originalId": "18446744073709551615",
+                                "publicId": "992",
+                                "source": "\/Users\/r3d5\/Downloads\/DayNightCycle.js",
                                 "additional": ""
                             }
                         ]
@@ -20656,7 +20688,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1605222281000814:95658"
+                    "1604537488511177:825117"
                 ]
             }
         },
