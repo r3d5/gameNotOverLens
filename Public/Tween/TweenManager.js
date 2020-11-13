@@ -206,7 +206,7 @@ function startTween( tweenObject, tweenName, completeCallback, startCallback, st
     var tweenScriptComponent = findTween( tweenObject, tweenName );
     if( tweenScriptComponent )
     {
-        debugPrint( "Tween Manager: Starting " + tweenName );
+//        debugPrint( "Tween Manager: Starting " + tweenName );
 
         // Remove tween if it already exists
         if( tweenScriptComponent.api.tween )
