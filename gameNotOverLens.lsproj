@@ -3,7 +3,7 @@
     "document_id": "VBcjvY8rTgdKUYayhQFT",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605638798822",
+    "lastChanged": "1605644779538",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -1690,6 +1690,9 @@
                         "vhs_glitch-min"
                     ],
                     [
+                        "Characters"
+                    ],
+                    [
                         "Characters",
                         "boyAnims",
                         "Animations"
@@ -2426,10 +2429,6 @@
                     ],
                     [
                         "Scripts",
-                        "Interactables"
-                    ],
-                    [
-                        "Scripts",
                         "Interactables",
                         "ApproachAnim"
                     ],
@@ -2535,6 +2534,15 @@
                     ],
                     [
                         "Tween",
+                        "ExampleResources [REMOVE_ME]"
+                    ],
+                    [
+                        "Tween",
+                        "ExampleResources [REMOVE_ME]",
+                        "Behavior"
+                    ],
+                    [
+                        "Tween",
                         "ExampleResources [REMOVE_ME]",
                         "ExampleTweenValueScript"
                     ],
@@ -2597,6 +2605,10 @@
                     [
                         "Tween",
                         "TweenManager"
+                    ],
+                    [
+                        "Tween",
+                        "TweenTypes"
                     ],
                     [
                         "Tween",
@@ -2858,7 +2870,10 @@
                     "1604600502333091:226002",
                     "1604600502336920:226004",
                     "1604600502430456:226257",
-                    "1604600502521476:226510"
+                    "1604600502521476:226510",
+                    "1605222281000814:95658",
+                    "1605222493339567:252434",
+                    "1605634176195566:186764"
                 ]
             ]
         },
@@ -6786,6 +6801,14 @@
                     "resId": "4512",
                     "uid": "1605637687722777:1934729",
                     "name": "Files\/File1097",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "4514",
+                    "uid": "1605640025087616:2804009",
+                    "name": "Files\/File1100.js",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -11218,6 +11241,10 @@
                 {
                     "k": "1098",
                     "v": "Files\/File1098.lsmat"
+                },
+                {
+                    "k": "1100",
+                    "v": "Files\/File1100.js"
                 }
             ]
         },
@@ -12233,6 +12260,10 @@
                     {
                         "k": "1026",
                         "v": "Disintegrate.lsmat"
+                    },
+                    {
+                        "k": "1028",
+                        "v": "Tween\/ExampleResources [REMOVE_ME]\/Behavior.js"
                     }
                 ],
                 "hashes": [
@@ -13170,11 +13201,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "159338d8b90311888a1f2d45e51c01bc"
+                        "v": "fbb94397f13e0f260f42306df63ba53f"
                     },
                     {
                         "k": "834",
-                        "v": "cec0a9132de350a92d79303cce22c263"
+                        "v": "dfcaa5e4c2623db7c57ce4cf0fa172e0"
                     },
                     {
                         "k": "835",
@@ -13186,7 +13217,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "42fc68f72ab29aef4ceac1fa69d4d2bb"
+                        "v": "89c26549e62d27471dc3babe91848806"
                     },
                     {
                         "k": "838",
@@ -13826,19 +13857,27 @@
                     },
                     {
                         "k": "1025",
-                        "v": "3003e690372d1f307fdfc6377501a146"
+                        "v": "eb5adcb1c7d4fdec586396a57559787c"
                     },
                     {
                         "k": "1026",
-                        "v": "094eff970685ce463b1f54d851be9071"
+                        "v": "5b9a33feef08b356652016c7e1ada400"
+                    },
+                    {
+                        "k": "1027",
+                        "v": "91c13f7497081d3638dd81f8c7b017fd"
+                    },
+                    {
+                        "k": "1028",
+                        "v": "91c13f7497081d3638dd81f8c7b017fd"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-17T19:44:54",
+                        "lastModified": "2020-11-17T21:25:45",
                         "name": "Public",
-                        "hash": "81d39b7991d53d956d75f75750ef5609",
+                        "hash": "97ad4058a04e837c05086c3b8438acd2",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -13986,7 +14025,7 @@
                                 "isFolder": "true",
                                 "lastModified": "2020-11-13T01:45:04",
                                 "name": "Tween",
-                                "hash": "ac12a3c425e97db9b77e308bd47989f9",
+                                "hash": "de92da30ce3d8a61d64d4d520e3e6574",
                                 "children": [
                                     {
                                         "isFolder": "true",
@@ -14069,9 +14108,9 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:45:04",
+                                        "lastModified": "2020-11-17T20:07:05",
                                         "name": "ExampleResources [REMOVE_ME]",
-                                        "hash": "49fefe51731ca0306b45b84efc2f3d74",
+                                        "hash": "82ab28079ecd82af0d98f01b73340554",
                                         "children": [
                                             {
                                                 "isFolder": "true",
@@ -14145,6 +14184,13 @@
                                                         "children": ""
                                                     }
                                                 ]
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2020-10-09T06:06:49",
+                                                "name": "Behavior.js",
+                                                "hash": "91c13f7497081d3638dd81f8c7b017fd",
+                                                "children": ""
                                             },
                                             {
                                                 "isFolder": "true",
@@ -14245,15 +14291,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-17T19:44:54",
+                                "lastModified": "2020-11-17T21:24:46",
                                 "name": "LUTs for main camera",
-                                "hash": "8f60cbd381482426578168daac6d6ce1",
+                                "hash": "06f8a6990b2e50e5b435c426ba67e84d",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T19:44:54",
+                                        "lastModified": "2020-11-17T21:24:46",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "b428a1c6dd6143ddf8bb7cb0adfcce9e",
+                                        "hash": "73b8c7e2e368725df077a27e3352bc2c",
                                         "children": ""
                                     },
                                     {
@@ -14265,9 +14311,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T19:44:54",
+                                        "lastModified": "2020-11-17T21:24:46",
                                         "name": "VHS.lsmat",
-                                        "hash": "38adf58e9e007dba4807bee223528c1d",
+                                        "hash": "5512495106835e32c7b11b09d9c6bca5",
                                         "children": ""
                                     },
                                     {
@@ -14279,9 +14325,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T19:44:53",
+                                        "lastModified": "2020-11-17T21:24:46",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "94d6529ab47fb9e824752a229a0426ad",
+                                        "hash": "e56db7913f6f414eb8a8f8dab89d5396",
                                         "children": ""
                                     },
                                     {
@@ -14891,9 +14937,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-17T19:27:01",
+                                "lastModified": "2020-11-17T21:25:45",
                                 "name": "GameController.js",
-                                "hash": "3003e690372d1f307fdfc6377501a146",
+                                "hash": "eb5adcb1c7d4fdec586396a57559787c",
                                 "children": ""
                             },
                             {
@@ -15343,9 +15389,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-17T19:44:54",
+                                "lastModified": "2020-11-17T21:24:46",
                                 "name": "Disintegrate.lsmat",
-                                "hash": "7a4571232d99584248da75a9f18b50e0",
+                                "hash": "37eb0d66405de731ee99b91f6489c6d5",
                                 "children": ""
                             },
                             {
@@ -20329,6 +20375,19 @@
                                                 ]
                                             }
                                         ]
+                                    },
+                                    {
+                                        "name": "Behavior",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "4514",
+                                        "dependency": "0",
+                                        "uid": "1605640025087616:2804009",
+                                        "fileId": "1100",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "1028",
+                                        "source": "\/Applications\/Lens Studio.app\/Contents\/MacOS\/\/..\/Resources\/Studio3DResources.bundle\/\/Presets\/Scripts\/BehaviorScript.js",
+                                        "additional": ""
                                     }
                                 ]
                             }
@@ -22526,13 +22585,8 @@
         },
         "InspectorController": {
             "selection": {
-                "resources": [
-                    {
-                        "uid": "1605637687722777:1934729",
-                        "path_list": [
-                            "Disintegrate"
-                        ]
-                    }
+                "objects": [
+                    "1605222281000814:95658"
                 ]
             }
         },
