@@ -11,6 +11,7 @@
 //@input Component.ScriptComponent behaviorScript
 //@input SceneObject fatherPad
 //@input SceneObject boyPad
+//@input SceneObject doorGO
 
 var tvOnColor = new vec4(1.0,1.0,1.0,1.0)
 var tvOffColor = new vec4(0,0,0,1.0)
@@ -90,6 +91,8 @@ function onUpdate(eventData) {
                 print(boyRotation)
                 
                 script.boyGO.getTransform().setWorldRotation(quat.fromEulerAngles(0,boyRotation * DEG_TO_RAD,0))
+                                script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,boyRotation * DEG_TO_RAD))
+
                script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x - 1,
                                                                       script.boyGO.getTransform().getLocalPosition().y,
                                                                       script.boyGO.getTransform().getLocalPosition().z - 0.1))
