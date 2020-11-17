@@ -2,6 +2,7 @@
 //@input Component.AnimationMixer fatherAnim
 //@input Component.AnimationMixer boyAnim
 //@input SceneObject fatherGO
+//@input SceneObject boyGO
 //@input float animationWeight = 1.0 {"widget":"slider", "min": 0, "max": 1, "step": 0.01}
 //@input float animationStartOffset = 0.0
 //@input int numberOfLoops = -1
@@ -22,6 +23,11 @@ var boyPlaybackSpeed = 1.75
 var boyPlayingAnim = script.boyAnim.getLayers()[1];
 var boyCryingAnim = script.boyAnim.getLayers()[2];
 var globalTime = 0
+var boyRotation = -8.8
+var boyPosition = 0
+var gameStarted = false
+ var DEG_TO_RAD = 0.0174533;
+
 print(boyCryingAnim.name)
 function init() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
@@ -39,6 +45,7 @@ function startFirstScene() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
     script.fatherAnim.start(fatherPlayingLayer, script.animationStartOffset, script.numberOfLoops);
     dissolveFather.reset(3);
+    gameStarted = true
 }
 script.api.startFirstScene = startFirstScene
 var dissolveFather = script.createEvent("DelayedCallbackEvent");
@@ -50,6 +57,9 @@ dissolveFather.bind(function(eventData)
 var updateEvent = script.createEvent("UpdateEvent");
 updateEvent.bind(onUpdate);
 function onUpdate(eventData) {
+    if (gameStarted) {
+        
+    
     globalTime += getDeltaTime()
     if(dissolveAnimTime > 0 && dissolveFatherBool) {
         script.fatherGO.getComponent("Component.RenderMeshVisual").mainMaterial.mainPass.disintegrate = (1 - dissolveAnimTime/12)
@@ -68,7 +78,29 @@ function onUpdate(eventData) {
          script.boyAnim.start("boyCrying", script.animationStartOffset, script.numberOfLoops);
     }
     
+    if (globalTime > 16.5 && globalTime < 16.6) {
+        boyCryingAnim.pause() 
+        script.boyAnim.start("sadWalk", script.animationStartOffset, script.numberOfLoops);
+        
+     }
+        
+     if (globalTime > 16.6 && globalTime < 25) {
+            if (boyRotation*DEG_TO_RAD > -90*DEG_TO_RAD) {
+                  boyRotation -= (200*DEG_TO_RAD)
+                print(boyRotation)
+                
+                script.boyGO.getTransform().setWorldRotation(quat.fromEulerAngles(0,boyRotation * DEG_TO_RAD,0))
+               script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x - 1,
+                                                                      script.boyGO.getTransform().getLocalPosition().y,
+                                                                      script.boyGO.getTransform().getLocalPosition().z - 0.1))
+            } else {
+                 script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x,
+                                                                      script.boyGO.getTransform().getLocalPosition().y,
+                                                                      script.boyGO.getTransform().getLocalPosition().z - 1.1))
+            }
+             
+          
+      }
     
-    
-    
+    }  
 }
