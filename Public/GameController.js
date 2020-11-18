@@ -34,7 +34,12 @@ var X = [];
 var fromAtoB = true
 var animationTime = 0;
 var progress = 0;
-var dayLength = 4.32
+var dayLengthColorSpeed = 0
+var dayLengthCircleSpeed = 0
+var normalDayLengthColorSpeed = 43.2
+var normalDayLengthCircleSpeed = 4.16
+var fastDayLengthColorSpeed = 4.32
+var fastDayLengthCircleSpeed = 41.6
 
 function init() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
@@ -43,6 +48,8 @@ function init() {
     script.fatherAnim.pause(fatherPlayingLayer)
     script.visual.mainPass.baseColor = tvOffColor;
     boyPlayingAnim.speedRatio = boyPlaybackSpeed
+    dayLengthCircleSpeed = normalDayLengthCircleSpeed
+    dayLengthColorSpeed = normalDayLengthColorSpeed
     setStartRotationToNight()
 }
 
@@ -76,7 +83,7 @@ function setStartRotationToNight() {
 }
 
 function lightCycles() {
-    var degrees = 41.6 * getDeltaTime();
+    var degrees = dayLengthCircleSpeed * getDeltaTime();
     var radians = degrees * (Math.PI / 180);
     var axis = vec3.left();
     var rotationToApply = quat.angleAxis(radians, axis);
@@ -84,12 +91,12 @@ function lightCycles() {
     var newRotation = rotationToApply.multiply(oldRotation);
     script.dayNightCircle.getTransform().setWorldRotation(newRotation);
 
-     if (animationTime < dayLength) {
+     if (animationTime < dayLengthColorSpeed) {
             animationTime += getDeltaTime()          
             if (fromAtoB) {   
-                X = lerp(dayLightColor, nightLightColor, animationTime/dayLength);
+                X = lerp(dayLightColor, nightLightColor, animationTime/dayLengthColorSpeed);
             } else {
-                X = lerp(nightLightColor, dayLightColor, animationTime/dayLength);
+                X = lerp(nightLightColor, dayLightColor, animationTime/dayLengthColorSpeed);
             }
         } else {
             fromAtoB = !fromAtoB;
