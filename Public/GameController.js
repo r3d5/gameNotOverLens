@@ -2,7 +2,10 @@
 //@input Component.AnimationMixer fatherAnim
 //@input Component.AnimationMixer boyAnim
 //@input SceneObject fatherGO
-//@input SceneObject boyGO
+//@input SceneObject boyPlaying
+//@input SceneObject boyCrying
+//@input SceneObject boyWalkingAwaySad
+
 //@input float animationWeight = 1.0 {"widget":"slider", "min": 0, "max": 1, "step": 0.01}
 //@input float animationStartOffset = 0.0
 //@input int numberOfLoops = -1
@@ -14,7 +17,8 @@
 //@input SceneObject doorGO
 //@input SceneObject dayNightCircle
 //@input Component.LightSource dayNightLight
-
+//@input Component.Image transitionAnimation
+ 
 var tvOnColor = new vec4(1.0,1.0,1.0,1.0)
 var tvOffColor = new vec4(0,0,0,1.0)
 var test = 0
@@ -119,19 +123,28 @@ function lerp(a, b, t) {
 var dayLightColor = [0.55,0.55,0.9];
 var nightLightColor = [0.05,0.05,0.6];
 script.dayNightLight.color = new vec3(dayLightColor[0], dayLightColor[1], dayLightColor[2])
-
-
+var transitionTime = 0;
+var enableTransition = false;
 var updateEvent = script.createEvent("UpdateEvent");
 updateEvent.bind(onUpdate);
 function onUpdate(eventData) {
     
+    if(enableTransition) {
+        if (transitionTime < 0.5) {
+            script.transitionAnimation.enabled = true
+            transitionTime += getDeltaTime()
+        } else {
+            script.transitionAnimation.enabled = false
+            transitionTime = 0
+            enableTransition = false
+        }
+    }
    
     if (gameStarted) {
         
     lightCycles()
     globalTime += getDeltaTime()
-    print(globalTime)
-       
+     
 
        
     if(dissolveAnimTime > 0 && dissolveFatherBool) {
@@ -144,38 +157,68 @@ function onUpdate(eventData) {
         boyPlaybackSpeed -= 0.024
         boyPlayingAnim.speedRatio = Math.max(boyPlaybackSpeed, 1e-20);
     }
-    
+        if (globalTime > 9.9 && globalTime < 10) {
+            enableTransition = true
+        }
+//  Apply change scene effect. Turn off boy playing, turn on boy crying
     if (globalTime > 10 && globalTime < 10.1) {
-         boyPlayingAnim.pause()
+         script.boyPlaying.enabled = false
+         script.boyCrying.enabled = true
          script.visual.mainPass.baseColor = tvOffColor;
-         script.boyAnim.start("boyCrying", script.animationStartOffset, script.numberOfLoops);
     }
-    
-    if (globalTime > 16.5 && globalTime < 16.6) {
-        boyCryingAnim.pause() 
-        script.boyAnim.start("sadWalk", script.animationStartOffset, script.numberOfLoops);
         
-     }
+        if (globalTime > 13.1 && globalTime < 13.2) {
+            enableTransition = true
+        }
         
-     if (globalTime > 16.6 && globalTime < 25) {
-            if (boyRotation*DEG_TO_RAD > -90*DEG_TO_RAD) {
-                  boyRotation -= (200*DEG_TO_RAD)
-                print(boyRotation)
-                
-                script.boyGO.getTransform().setWorldRotation(quat.fromEulerAngles(0,boyRotation * DEG_TO_RAD,0))
-                                script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,boyRotation * DEG_TO_RAD))
+        if (globalTime > 13.2 && globalTime < 13.3) {
+            script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,-90 * DEG_TO_RAD))
+            script.boyCrying.enabled = false
+            script.boyWalkingAwaySad.enabled = true
+        }
+        
+        if(globalTime > 13.3 && globalTime < 19) {
+             script.boyWalkingAwaySad.getTransform().setLocalPosition(new vec3(script.boyWalkingAwaySad.getTransform().getLocalPosition().x,
+                                                                      script.boyWalkingAwaySad.getTransform().getLocalPosition().y,
+                                                                      script.boyWalkingAwaySad.getTransform().getLocalPosition().z - 1.1))
+        }
+        
+        if(globalTime > 19 && globalTime < 19.1) {
+                        enableTransition = true
 
-               script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x - 1,
-                                                                      script.boyGO.getTransform().getLocalPosition().y,
-                                                                      script.boyGO.getTransform().getLocalPosition().z - 0.1))
-            } else {
-                 script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x,
-                                                                      script.boyGO.getTransform().getLocalPosition().y,
-                                                                      script.boyGO.getTransform().getLocalPosition().z - 1.1))
-            }
-             
+        
+        }
+        if(globalTime > 19.1 && globalTime < 19.2) {
+             script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,0))
+             script.boyWalkingAwaySad.enabled = false
+        }
           
-      }
+//    
+//    if (globalTime > 16.5 && globalTime < 16.6) {
+//        boyCryingAnim.pause() 
+//        script.boyAnim.start("sadWalk", script.animationStartOffset, script.numberOfLoops);
+//        
+//     }
+//        
+//     if (globalTime > 16.6 && globalTime < 25) {
+//            if (boyRotation*DEG_TO_RAD > -90*DEG_TO_RAD) {
+//                  boyRotation -= (200*DEG_TO_RAD)
+//                print(boyRotation)
+//                
+//                script.boyGO.getTransform().setWorldRotation(quat.fromEulerAngles(0,boyRotation * DEG_TO_RAD,0))
+//                                script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,boyRotation * DEG_TO_RAD))
+//
+//               script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x - 1,
+//                                                                      script.boyGO.getTransform().getLocalPosition().y,
+//                                                                      script.boyGO.getTransform().getLocalPosition().z - 0.1))
+//            } else {
+//                 script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x,
+//                                                                      script.boyGO.getTransform().getLocalPosition().y,
+//                                                                      script.boyGO.getTransform().getLocalPosition().z - 1.1))
+//            }
+//             
+//          
+//      }
     
     }  
 }
