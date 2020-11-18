@@ -3,7 +3,7 @@
     "document_id": "VBcjvY8rTgdKUYayhQFT",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605741626427",
+    "lastChanged": "1605742380944",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -29,9 +29,6 @@
         "ResourceUiComponent": {
             "collapsedList": [
                 [
-                    [
-                        "3D ROOM TEXTURES + MATERIALS MISC"
-                    ],
                     [
                         "3D ROOM TEXTURES + MATERIALS MISC",
                         "1-fine-wood-seamless"
@@ -13404,11 +13401,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "5d8f6541127f758b75ddfe11f1c6acea"
+                        "v": "7674466799f57eef239226fc4e10cd3f"
                     },
                     {
                         "k": "834",
-                        "v": "4bca8eff63aa6275ee0baaf1a0529d78"
+                        "v": "6ac6573c50731948cbe4b5e6e1cefca6"
                     },
                     {
                         "k": "835",
@@ -13420,7 +13417,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "16b936c80ace6ace8acd4b890bde5904"
+                        "v": "cc312dcc8187b761386a2fa5dba8ea7d"
                     },
                     {
                         "k": "838",
@@ -14060,11 +14057,11 @@
                     },
                     {
                         "k": "1025",
-                        "v": "d86e2b1b948dd80a57b01dade5f891ed"
+                        "v": "c0cf868f93fc016ac9353491ac1d2f75"
                     },
                     {
                         "k": "1026",
-                        "v": "cb109204dd8d11ae4d795ea9bc22e89c"
+                        "v": "4ea2606be8cc2a4e34cc506e29ec40c8"
                     },
                     {
                         "k": "1027",
@@ -14086,9 +14083,9 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-19T00:19:49",
+                        "lastModified": "2020-11-19T00:32:10",
                         "name": "Public",
-                        "hash": "25f94812cc9cd0862724d4f747864352",
+                        "hash": "d3a62656c30c0bda461366933860bec4",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -14502,15 +14499,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-19T00:15:28",
+                                "lastModified": "2020-11-19T00:32:10",
                                 "name": "LUTs for main camera",
-                                "hash": "9c6e2e97494b68b732235ec72b0d3f03",
+                                "hash": "11c593822364d6feb5116176f59c4133",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-19T00:15:28",
+                                        "lastModified": "2020-11-19T00:32:10",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "0dfad33e30b3b954a71a6c89e0aed501",
+                                        "hash": "2ff4d25962d704a5627ba3eb7b0caa4e",
                                         "children": ""
                                     },
                                     {
@@ -14522,9 +14519,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-19T00:15:28",
+                                        "lastModified": "2020-11-19T00:32:10",
                                         "name": "VHS.lsmat",
-                                        "hash": "9bc80998a26e1ebcaf6a197fd5ef0035",
+                                        "hash": "d78522e5cf9cbc9dcccec7641bfeba90",
                                         "children": ""
                                     },
                                     {
@@ -14536,9 +14533,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-19T00:15:28",
+                                        "lastModified": "2020-11-19T00:32:10",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "4d31fcdcc52a9c52d1814c9a72050fbb",
+                                        "hash": "28c5d9838dd0a47f5638363ccc26100d",
                                         "children": ""
                                     },
                                     {
@@ -15162,9 +15159,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-19T00:19:49",
+                                "lastModified": "2020-11-19T00:28:58",
                                 "name": "GameController.js",
-                                "hash": "d86e2b1b948dd80a57b01dade5f891ed",
+                                "hash": "c0cf868f93fc016ac9353491ac1d2f75",
                                 "children": ""
                             },
                             {
@@ -15614,9 +15611,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-19T00:15:28",
+                                "lastModified": "2020-11-19T00:32:10",
                                 "name": "Disintegrate.lsmat",
-                                "hash": "bc4cf88c55b3d4bc8ff9645c19664bbb",
+                                "hash": "2add6f32f9010ff4942b969b36232076",
                                 "children": ""
                             },
                             {
@@ -22836,8 +22833,14 @@
         },
         "InspectorController": {
             "selection": {
-                "objects": [
-                    "1604535143909425:236080"
+                "resources": [
+                    {
+                        "uid": "1604621893633516:81996",
+                        "path_list": [
+                            "3D ROOM TEXTURES + MATERIALS MISC",
+                            "Day Night Out Windows MAT"
+                        ]
+                    }
                 ]
             }
         },

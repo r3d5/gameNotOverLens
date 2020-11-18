@@ -18,6 +18,7 @@
 //@input SceneObject dayNightCircle
 //@input Component.LightSource dayNightLight
 //@input Component.Image transitionAnimation
+//@input Component.LightSource shadowLight
  
 var tvOnColor = new vec4(1.0,1.0,1.0,1.0)
 var tvOffColor = new vec4(0,0,0,1.0)
@@ -34,7 +35,8 @@ var boyRotation = -8.8
 var boyPosition = 0
 var gameStarted = false
 var DEG_TO_RAD = 0.0174533;
-var X = [];
+var lightColor = [];
+var lightShadowRotation = [];
 var fromAtoB = true
 var animationTime = 0;
 var progress = 0;
@@ -44,6 +46,14 @@ var normalDayLengthColorSpeed = 43.2
 var normalDayLengthCircleSpeed = 4.16
 var fastDayLengthColorSpeed = 4.32
 var fastDayLengthCircleSpeed = 41.6
+var dayLightColor = [0.55,0.55,0.9];
+var nightLightColor = [0.05,0.05,0.6];
+var shadowsLightStart = [180,-18, 130];
+var shadowsLightFinish = [-14,-7,50];
+var transitionTime = 0;
+var enableTransition = false;
+
+script.dayNightLight.color = new vec3(dayLightColor[0], dayLightColor[1], dayLightColor[2])
 
 function init() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
@@ -98,15 +108,19 @@ function lightCycles() {
      if (animationTime < dayLengthColorSpeed) {
             animationTime += getDeltaTime()          
             if (fromAtoB) {   
-                X = lerp(dayLightColor, nightLightColor, animationTime/dayLengthColorSpeed);
+                lightColor = lerp(dayLightColor, nightLightColor, animationTime/dayLengthColorSpeed);
+                lightShadowRotation = lerp(shadowsLightStart, shadowsLightFinish, animationTime/dayLengthColorSpeed);
+
             } else {
-                X = lerp(nightLightColor, dayLightColor, animationTime/dayLengthColorSpeed);
+                lightColor = lerp(nightLightColor, dayLightColor, animationTime/dayLengthColorSpeed);
+                lightShadowRotation = lerp(shadowsLightFinish, shadowsLightStart, animationTime/dayLengthColorSpeed);
             }
         } else {
             fromAtoB = !fromAtoB;
             animationTime = 0;
         }
-        script.dayNightLight.color = new vec3(X[0], X[1], X[2])
+        script.dayNightLight.color = new vec3(lightColor[0], lightColor[1], lightColor[2])
+        script.shadowLight.getTransform().setWorldRotation(quat.fromEulerAngles(lightShadowRotation[0]*DEG_TO_RAD, lightShadowRotation[1]*DEG_TO_RAD, lightShadowRotation[2]*DEG_TO_RAD))
 }
 
 
@@ -120,11 +134,6 @@ function lerp(a, b, t) {
     return x;
 }
 
-var dayLightColor = [0.55,0.55,0.9];
-var nightLightColor = [0.05,0.05,0.6];
-script.dayNightLight.color = new vec3(dayLightColor[0], dayLightColor[1], dayLightColor[2])
-var transitionTime = 0;
-var enableTransition = false;
 var updateEvent = script.createEvent("UpdateEvent");
 updateEvent.bind(onUpdate);
 function onUpdate(eventData) {
@@ -145,8 +154,6 @@ function onUpdate(eventData) {
     lightCycles()
     globalTime += getDeltaTime()
      
-
-       
     if(dissolveAnimTime > 0 && dissolveFatherBool) {
         script.fatherGO.getComponent("Component.RenderMeshVisual").mainMaterial.mainPass.disintegrate = (1 - dissolveAnimTime/12)
         dissolveAnimTime = dissolveAnimTime - 0.12
@@ -188,37 +195,14 @@ function onUpdate(eventData) {
 
         
         }
+        
         if(globalTime > 19.1 && globalTime < 19.2) {
              script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,0))
              script.boyWalkingAwaySad.enabled = false
+             dayLengthCircleSpeed = fastDayLengthCircleSpeed
+             dayLengthColorSpeed = fastDayLengthColorSpeed
         }
           
-//    
-//    if (globalTime > 16.5 && globalTime < 16.6) {
-//        boyCryingAnim.pause() 
-//        script.boyAnim.start("sadWalk", script.animationStartOffset, script.numberOfLoops);
-//        
-//     }
-//        
-//     if (globalTime > 16.6 && globalTime < 25) {
-//            if (boyRotation*DEG_TO_RAD > -90*DEG_TO_RAD) {
-//                  boyRotation -= (200*DEG_TO_RAD)
-//                print(boyRotation)
-//                
-//                script.boyGO.getTransform().setWorldRotation(quat.fromEulerAngles(0,boyRotation * DEG_TO_RAD,0))
-//                                script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,boyRotation * DEG_TO_RAD))
-//
-//               script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x - 1,
-//                                                                      script.boyGO.getTransform().getLocalPosition().y,
-//                                                                      script.boyGO.getTransform().getLocalPosition().z - 0.1))
-//            } else {
-//                 script.boyGO.getTransform().setLocalPosition(new vec3(script.boyGO.getTransform().getLocalPosition().x,
-//                                                                      script.boyGO.getTransform().getLocalPosition().y,
-//                                                                      script.boyGO.getTransform().getLocalPosition().z - 1.1))
-//            }
-//             
-//          
-//      }
     
     }  
 }
