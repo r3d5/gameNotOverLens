@@ -3,7 +3,7 @@
     "document_id": "VBcjvY8rTgdKUYayhQFT",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605647323838",
+    "lastChanged": "1605736106338",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -29,9 +29,6 @@
         "ResourceUiComponent": {
             "collapsedList": [
                 [
-                    [
-                        "3D ROOM TEXTURES + MATERIALS MISC"
-                    ],
                     [
                         "3D ROOM TEXTURES + MATERIALS MISC",
                         "1-fine-wood-seamless"
@@ -2530,13 +2527,6 @@
                         "white"
                     ],
                     [
-                        "Tween"
-                    ],
-                    [
-                        "Tween",
-                        "ExampleResources [REMOVE_ME]"
-                    ],
-                    [
                         "Tween",
                         "ExampleResources [REMOVE_ME]",
                         "Behavior"
@@ -2864,13 +2854,10 @@
                     "1526941938558153:273771",
                     "1526941938562106:273791",
                     "1526941938563541:273801",
-                    "1604535243861803:262303",
                     "1604535243867690:262324",
                     "1604535243874627:262345",
                     "1604535243883654:262370",
                     "1604535243891699:262391",
-                    "1604535243898087:262412",
-                    "1604535243904385:262433",
                     "1604535243917901:262458",
                     "1604535243925680:262479",
                     "1604535243932030:262500",
@@ -2880,42 +2867,18 @@
                     "1604535243969545:262588",
                     "1604535243982522:262613",
                     "1604535243988615:262634",
-                    "1604535243996088:262655",
-                    "1604535244004688:262676",
-                    "1604535244014138:262697",
                     "1604535244021850:262718",
-                    "1604535244109729:262912",
-                    "1604535244132618:262981",
                     "1604535244154644:263032",
-                    "1604535244171894:263079",
-                    "1604535244200298:263152",
-                    "1604535244250787:263269",
-                    "1604535244267395:263316",
-                    "1604535244325523:263440",
-                    "1604535244353876:263513",
-                    "1604535244386251:263582",
                     "1604535244414354:263629",
                     "1604535244476155:263788",
-                    "1604535244536581:263943",
                     "1604535245030967:265010",
-                    "1604535245044066:265035",
-                    "1604535245052292:265056",
-                    "1604535245247601:265513",
-                    "1604535245459890:265962",
-                    "1604535245708303:266437",
-                    "1604535245939110:266864",
                     "1604600502282075:225602",
                     "1604600502328588:225998",
                     "1604600502331013:226000",
                     "1604600502333091:226002",
                     "1604600502336920:226004",
                     "1604600502430456:226257",
-                    "1604600502521476:226510",
-                    "1605222280997961:95568",
-                    "1605222281000814:95658",
-                    "1605222493325821:252408",
-                    "1605222493339567:252434",
-                    "1605634176195566:186764"
+                    "1604600502521476:226510"
                 ]
             ]
         },
@@ -2977,7 +2940,7 @@
             ]
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1605637687722777:1934729"
+            "active_graph_asset": "1604539101730896:1134328"
         }
     },
     "model": {
@@ -13244,11 +13207,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "3d48c32b59f44d89a03c708ad58c3d62"
+                        "v": "b00287412fdb051ec77b6822d1a6f330"
                     },
                     {
                         "k": "834",
-                        "v": "a8920f5a6b6a704c4976f41804afe960"
+                        "v": "00b5a5159214e1b8d377470f0c279638"
                     },
                     {
                         "k": "835",
@@ -13260,7 +13223,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "fa32777a9a2c0ae1bdf9de0e06aa9853"
+                        "v": "b3019a2101594a37fff7d52c417619d8"
                     },
                     {
                         "k": "838",
@@ -13420,7 +13383,7 @@
                     },
                     {
                         "k": "886",
-                        "v": "0cec86ddc9ccfa06623370ebcf61c6c5"
+                        "v": "5d121a4255e3fc26bfb9d5a5b6d56e28"
                     },
                     {
                         "k": "887",
@@ -13900,11 +13863,11 @@
                     },
                     {
                         "k": "1025",
-                        "v": "23ee583e8163d083cd17617e27c7786b"
+                        "v": "14e9ba363455d313a539f3106278d4c1"
                     },
                     {
                         "k": "1026",
-                        "v": "531e7eda6d8056678f10d76f427098e6"
+                        "v": "20b9648b5e9831bf35770b90de842682"
                     },
                     {
                         "k": "1027",
@@ -13918,9 +13881,9 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-17T22:07:49",
+                        "lastModified": "2020-11-18T22:46:40",
                         "name": "Public",
-                        "hash": "7390576f3b0378e989c88d7c31ddd2d8",
+                        "hash": "f46ce33f577c97a8b2386ad3a4da0051",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -14066,13 +14029,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-13T01:45:04",
+                                "lastModified": "2020-11-17T22:40:52",
                                 "name": "Tween",
                                 "hash": "de92da30ce3d8a61d64d4d520e3e6574",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-13T01:45:04",
+                                        "lastModified": "2020-11-17T22:46:51",
                                         "name": "TweenTypes",
                                         "hash": "5af3494c14c9b943ba6ae86bfdbe8caa",
                                         "children": [
@@ -14092,7 +14055,7 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2020-11-13T01:45:04",
+                                                "lastModified": "2020-11-17T22:46:51",
                                                 "name": "TweenTransform.js",
                                                 "hash": "8bf0bd9ac22b88367eeffb4c8379aa63",
                                                 "children": ""
@@ -14151,7 +14114,7 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2020-11-17T20:07:05",
+                                        "lastModified": "2020-11-17T22:41:20",
                                         "name": "ExampleResources [REMOVE_ME]",
                                         "hash": "82ab28079ecd82af0d98f01b73340554",
                                         "children": [
@@ -14259,7 +14222,7 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2020-11-13T01:45:04",
+                                                "lastModified": "2020-11-18T21:50:32",
                                                 "name": "ExampleTweenValueScript.js",
                                                 "hash": "ce2eb7e01ca081a6c22e540687f98f51",
                                                 "children": ""
@@ -14275,7 +14238,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-13T01:45:04",
+                                        "lastModified": "2020-11-17T18:18:43",
                                         "name": "TweenManager.js",
                                         "hash": "86d5abe9bcbc4c8d23db5ed1e663e85a",
                                         "children": ""
@@ -14334,15 +14297,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-17T22:06:01",
+                                "lastModified": "2020-11-18T22:46:40",
                                 "name": "LUTs for main camera",
-                                "hash": "633e789b381f844eda0d181f249b76e2",
+                                "hash": "f7eeee3be134d50b6afe9d2ae8e8ac1e",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T22:06:01",
+                                        "lastModified": "2020-11-18T22:46:23",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "b9328de2d35b3d0a0139a82947bae054",
+                                        "hash": "f953356fc5199f42744592f702ff765a",
                                         "children": ""
                                     },
                                     {
@@ -14354,9 +14317,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T22:06:01",
+                                        "lastModified": "2020-11-18T22:46:23",
                                         "name": "VHS.lsmat",
-                                        "hash": "95fb3ce8e1f1f4507ed7972dc69d58fc",
+                                        "hash": "9f9c650a7dd9b6429ca77d2c87171dfa",
                                         "children": ""
                                     },
                                     {
@@ -14368,9 +14331,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T22:06:01",
+                                        "lastModified": "2020-11-18T22:46:23",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "09d15e4dad0efc768a7506b43a084529",
+                                        "hash": "f16a828c482c6237feff37b9226d0e89",
                                         "children": ""
                                     },
                                     {
@@ -14391,9 +14354,9 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-17T18:18:59",
+                                "lastModified": "2020-11-18T22:47:18",
                                 "name": "3D ROOM TEXTURES + MATERIALS MISC",
-                                "hash": "fde2c3c9c859b65b4a06c8252968f28c",
+                                "hash": "4cc72e1956ece11a02af07aad789fbd4",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -14474,9 +14437,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-17T18:18:59",
+                                        "lastModified": "2020-11-18T22:47:18",
                                         "name": "Day Night Out Windows MAT.lsmat",
-                                        "hash": "0cec86ddc9ccfa06623370ebcf61c6c5",
+                                        "hash": "5d121a4255e3fc26bfb9d5a5b6d56e28",
                                         "children": ""
                                     },
                                     {
@@ -14980,9 +14943,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-17T22:07:49",
+                                "lastModified": "2020-11-18T22:40:27",
                                 "name": "GameController.js",
-                                "hash": "23ee583e8163d083cd17617e27c7786b",
+                                "hash": "14e9ba363455d313a539f3106278d4c1",
                                 "children": ""
                             },
                             {
@@ -15432,9 +15395,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-17T22:06:01",
+                                "lastModified": "2020-11-18T22:46:23",
                                 "name": "Disintegrate.lsmat",
-                                "hash": "dbc52e5af02fddd94553e42fb4a91e47",
+                                "hash": "805d8f93935082b4dd66a43c76435304",
                                 "children": ""
                             },
                             {
@@ -22629,7 +22592,7 @@
         "InspectorController": {
             "selection": {
                 "objects": [
-                    "1605647037978849:6522338"
+                    "1604621925772705:105496"
                 ]
             }
         },

@@ -12,6 +12,8 @@
 //@input SceneObject fatherPad
 //@input SceneObject boyPad
 //@input SceneObject doorGO
+//@input SceneObject dayNightCircle
+//@input Component.LightSource dayNightLight
 
 var tvOnColor = new vec4(1.0,1.0,1.0,1.0)
 var tvOffColor = new vec4(0,0,0,1.0)
@@ -27,9 +29,13 @@ var globalTime = 0
 var boyRotation = -8.8
 var boyPosition = 0
 var gameStarted = false
- var DEG_TO_RAD = 0.0174533;
+var DEG_TO_RAD = 0.0174533;
+var X = [];
+var fromAtoB = true
+var animationTime = 0;
+var progress = 0;
+var dayLength = 3
 
-print(boyCryingAnim.name)
 function init() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
     script.boyAnim.pause(boyPlayingLayer)
@@ -55,13 +61,66 @@ dissolveFather.bind(function(eventData)
     dissolveFatherBool = true
 });
 
+function lightCycles() {
+    var degrees = 1.5;
+    // Convert degrees to radians
+    var radians = degrees * (Math.PI / 180);
+    // Axis to rotate around
+    var axis = vec3.left();
+    // Rotation we will apply to the object's current rotation
+    var rotationToApply = quat.angleAxis(radians, axis);
+    // Get the object's current world rotation
+    var oldRotation = script.dayNightCircle.getTransform().getWorldRotation();
+    // Get the new rotation by rotating the old rotation by rotationToApply
+    var newRotation = rotationToApply.multiply(oldRotation);
+
+    // Set the object's world rotation to the new rotation
+    script.dayNightCircle.getTransform().setWorldRotation(newRotation);
+     if (animationTime < dayLength) {
+            animationTime += getDeltaTime()
+          // Degrees to rotate by
+          
+            if (fromAtoB) {   
+                X = lerp(dayLightColor, nightLightColor, animationTime/dayLength);
+            } else {
+                X = lerp(nightLightColor, dayLightColor, animationTime/dayLength);
+            }
+        } else {
+            fromAtoB = !fromAtoB;
+            animationTime = 0;
+        }
+        script.dayNightLight.color = new vec3(X[0], X[1], X[2])
+}
+
+
+function lerp(a, b, t) {
+    var len = a.length;
+    if(b.length != len) return;
+
+    var x = [];
+    for(var i = 0; i < len; i++)
+        x.push(a[i] + t * (b[i] - a[i]));
+    return x;
+}
+
+var dayLightColor = [0.55,0.55,0.9];
+var nightLightColor = [0.05,0.05,0.6];
+script.dayNightLight.color = new vec3(dayLightColor[0], dayLightColor[1], dayLightColor[2])
+
+
 var updateEvent = script.createEvent("UpdateEvent");
 updateEvent.bind(onUpdate);
 function onUpdate(eventData) {
+    
+   
     if (gameStarted) {
         
-    
+    lightCycles()
     globalTime += getDeltaTime()
+    print(globalTime)
+       
+
+       
     if(dissolveAnimTime > 0 && dissolveFatherBool) {
         script.fatherGO.getComponent("Component.RenderMeshVisual").mainMaterial.mainPass.disintegrate = (1 - dissolveAnimTime/12)
         dissolveAnimTime = dissolveAnimTime - 0.12
