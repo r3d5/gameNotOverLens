@@ -34,7 +34,7 @@ var X = [];
 var fromAtoB = true
 var animationTime = 0;
 var progress = 0;
-var dayLength = 3
+var dayLength = 4.32
 
 function init() {
     script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
@@ -43,9 +43,11 @@ function init() {
     script.fatherAnim.pause(fatherPlayingLayer)
     script.visual.mainPass.baseColor = tvOffColor;
     boyPlayingAnim.speedRatio = boyPlaybackSpeed
+    setStartRotationToNight()
 }
 
 init()
+
 function startFirstScene() {
     script.visual.mainPass.baseColor = tvOnColor;
     //TODO: Check if anim is playing, then dont start
@@ -54,6 +56,7 @@ function startFirstScene() {
     dissolveFather.reset(3);
     gameStarted = true
 }
+
 script.api.startFirstScene = startFirstScene
 var dissolveFather = script.createEvent("DelayedCallbackEvent");
 dissolveFather.bind(function(eventData)
@@ -61,25 +64,28 @@ dissolveFather.bind(function(eventData)
     dissolveFatherBool = true
 });
 
-function lightCycles() {
-    var degrees = 1.5;
-    // Convert degrees to radians
+function setStartRotationToNight() {
+    //PODSKAZKA: 270 = SOLNCE, 90 = LUNA, 0 = WECHER, 180 = UTRO
+    var degrees = 270;
     var radians = degrees * (Math.PI / 180);
-    // Axis to rotate around
     var axis = vec3.left();
-    // Rotation we will apply to the object's current rotation
     var rotationToApply = quat.angleAxis(radians, axis);
-    // Get the object's current world rotation
     var oldRotation = script.dayNightCircle.getTransform().getWorldRotation();
-    // Get the new rotation by rotating the old rotation by rotationToApply
     var newRotation = rotationToApply.multiply(oldRotation);
-
-    // Set the object's world rotation to the new rotation
     script.dayNightCircle.getTransform().setWorldRotation(newRotation);
+}
+
+function lightCycles() {
+    var degrees = 41.6 * getDeltaTime();
+    var radians = degrees * (Math.PI / 180);
+    var axis = vec3.left();
+    var rotationToApply = quat.angleAxis(radians, axis);
+    var oldRotation = script.dayNightCircle.getTransform().getWorldRotation();
+    var newRotation = rotationToApply.multiply(oldRotation);
+    script.dayNightCircle.getTransform().setWorldRotation(newRotation);
+
      if (animationTime < dayLength) {
-            animationTime += getDeltaTime()
-          // Degrees to rotate by
-          
+            animationTime += getDeltaTime()          
             if (fromAtoB) {   
                 X = lerp(dayLightColor, nightLightColor, animationTime/dayLength);
             } else {

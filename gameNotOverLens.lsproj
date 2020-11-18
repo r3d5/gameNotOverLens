@@ -3,7 +3,7 @@
     "document_id": "VBcjvY8rTgdKUYayhQFT",
     "original_document_id": "UBTksF8LrsPupR55pyTR",
     "version": "26",
-    "lastChanged": "1605736106338",
+    "lastChanged": "1605737203346",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -112,6 +112,10 @@
                     [
                         "3D ROOM TEXTURES + MATERIALS MISC",
                         "room_floor_texture"
+                    ],
+                    [
+                        "3D ROOM TEXTURES + MATERIALS MISC",
+                        "room_lowpoly_008_rdy4exp_CM"
                     ],
                     [
                         "3D ROOM TEXTURES + MATERIALS MISC",
@@ -2527,6 +2531,9 @@
                         "white"
                     ],
                     [
+                        "Tween"
+                    ],
+                    [
                         "Tween",
                         "ExampleResources [REMOVE_ME]",
                         "Behavior"
@@ -2640,6 +2647,9 @@
                         "Tween",
                         "TweenTypes",
                         "TweenValue"
+                    ],
+                    [
+                        "day_night_cycle NSEW"
                     ],
                     [
                         "gamePrefab"
@@ -6814,6 +6824,14 @@
                     "resId": "4514",
                     "uid": "1605640025087616:2804009",
                     "name": "Files\/File1100.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "4515",
+                    "uid": "1605736690266222:324627",
+                    "name": "Files\/File1101.png",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -11251,6 +11269,14 @@
                 {
                     "k": "1100",
                     "v": "Files\/File1100.js"
+                },
+                {
+                    "k": "1101",
+                    "v": "Files\/File1101.png"
+                },
+                {
+                    "k": "1102",
+                    "v": "Files\/File1102.png"
                 }
             ]
         },
@@ -12270,6 +12296,10 @@
                     {
                         "k": "1028",
                         "v": "Tween\/ExampleResources [REMOVE_ME]\/Behavior.js"
+                    },
+                    {
+                        "k": "1029",
+                        "v": "day_night_cycle NSEW.png"
                     }
                 ],
                 "hashes": [
@@ -13207,11 +13237,11 @@
                     },
                     {
                         "k": "833",
-                        "v": "b00287412fdb051ec77b6822d1a6f330"
+                        "v": "1a5b74321797001cf184346a970a6fac"
                     },
                     {
                         "k": "834",
-                        "v": "00b5a5159214e1b8d377470f0c279638"
+                        "v": "dec3f3eac6a01d5b077bc7bb923e1a72"
                     },
                     {
                         "k": "835",
@@ -13223,7 +13253,7 @@
                     },
                     {
                         "k": "837",
-                        "v": "b3019a2101594a37fff7d52c417619d8"
+                        "v": "8ced50cab4eebc808df761e32bed6bf1"
                     },
                     {
                         "k": "838",
@@ -13383,7 +13413,7 @@
                     },
                     {
                         "k": "886",
-                        "v": "5d121a4255e3fc26bfb9d5a5b6d56e28"
+                        "v": "d8f78485a07c3cbf3529818c7ef1ef64"
                     },
                     {
                         "k": "887",
@@ -13863,11 +13893,11 @@
                     },
                     {
                         "k": "1025",
-                        "v": "14e9ba363455d313a539f3106278d4c1"
+                        "v": "ba6ef696d1c0a81e64227ab0bd33b246"
                     },
                     {
                         "k": "1026",
-                        "v": "20b9648b5e9831bf35770b90de842682"
+                        "v": "4149c317be8630e3eb08dbcbff42f397"
                     },
                     {
                         "k": "1027",
@@ -13876,14 +13906,18 @@
                     {
                         "k": "1028",
                         "v": "91c13f7497081d3638dd81f8c7b017fd"
+                    },
+                    {
+                        "k": "1029",
+                        "v": "c2e60f77fabcad2c224ccb2a7119ceb3"
                     }
                 ],
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2020-11-18T22:46:40",
+                        "lastModified": "2020-11-18T23:06:02",
                         "name": "Public",
-                        "hash": "f46ce33f577c97a8b2386ad3a4da0051",
+                        "hash": "ac4099956958a956378fae921bed4107",
                         "children": [
                             {
                                 "isFolder": "true",
@@ -14297,15 +14331,15 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-18T22:46:40",
+                                "lastModified": "2020-11-18T22:58:33",
                                 "name": "LUTs for main camera",
-                                "hash": "f7eeee3be134d50b6afe9d2ae8e8ac1e",
+                                "hash": "2f42b3c7d05351752df46a725f6013e7",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-18T22:46:23",
+                                        "lastModified": "2020-11-18T22:58:33",
                                         "name": "Analog TV.lsmat",
-                                        "hash": "f953356fc5199f42744592f702ff765a",
+                                        "hash": "4864ce1b9764856417dd20f985c46b20",
                                         "children": ""
                                     },
                                     {
@@ -14317,9 +14351,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-18T22:46:23",
+                                        "lastModified": "2020-11-18T22:58:33",
                                         "name": "VHS.lsmat",
-                                        "hash": "9f9c650a7dd9b6429ca77d2c87171dfa",
+                                        "hash": "e3eab8233142255c57bede43d8b31465",
                                         "children": ""
                                     },
                                     {
@@ -14331,9 +14365,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-18T22:46:23",
+                                        "lastModified": "2020-11-18T22:58:33",
                                         "name": "Gauss Blur.lsmat",
-                                        "hash": "f16a828c482c6237feff37b9226d0e89",
+                                        "hash": "467c00355605848c0deb307202411681",
                                         "children": ""
                                     },
                                     {
@@ -14353,10 +14387,17 @@
                                 ]
                             },
                             {
+                                "isFolder": "false",
+                                "lastModified": "2020-11-18T22:58:00",
+                                "name": "day_night_cycle NSEW.png",
+                                "hash": "c2e60f77fabcad2c224ccb2a7119ceb3",
+                                "children": ""
+                            },
+                            {
                                 "isFolder": "true",
-                                "lastModified": "2020-11-18T22:47:18",
+                                "lastModified": "2020-11-18T22:58:31",
                                 "name": "3D ROOM TEXTURES + MATERIALS MISC",
-                                "hash": "4cc72e1956ece11a02af07aad789fbd4",
+                                "hash": "a385736174e96362e210f1c2146a0fcd",
                                 "children": [
                                     {
                                         "isFolder": "false",
@@ -14437,9 +14478,9 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2020-11-18T22:47:18",
+                                        "lastModified": "2020-11-18T22:58:31",
                                         "name": "Day Night Out Windows MAT.lsmat",
-                                        "hash": "5d121a4255e3fc26bfb9d5a5b6d56e28",
+                                        "hash": "d8f78485a07c3cbf3529818c7ef1ef64",
                                         "children": ""
                                     },
                                     {
@@ -14943,9 +14984,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-18T22:40:27",
+                                "lastModified": "2020-11-18T23:06:02",
                                 "name": "GameController.js",
-                                "hash": "14e9ba363455d313a539f3106278d4c1",
+                                "hash": "ba6ef696d1c0a81e64227ab0bd33b246",
                                 "children": ""
                             },
                             {
@@ -15395,9 +15436,9 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2020-11-18T22:46:23",
+                                "lastModified": "2020-11-18T22:58:33",
                                 "name": "Disintegrate.lsmat",
-                                "hash": "805d8f93935082b4dd66a43c76435304",
+                                "hash": "01283a28c9b300d5ca86a00604bd5f54",
                                 "children": ""
                             },
                             {
@@ -22585,14 +22626,33 @@
                         "publicId": "1026",
                         "source": "",
                         "additional": ""
+                    },
+                    {
+                        "name": "day_night_cycle NSEW",
+                        "type": "1",
+                        "subtype": "9",
+                        "resourceId": "4515",
+                        "dependency": "0",
+                        "uid": "1605736690266222:324627",
+                        "fileId": "1101",
+                        "originalId": "1102",
+                        "publicId": "1029",
+                        "source": "\/Users\/r3d5\/Downloads\/day_night_cycle NSEW.png",
+                        "additional": ""
                     }
                 ]
             }
         },
         "InspectorController": {
             "selection": {
-                "objects": [
-                    "1604621925772705:105496"
+                "resources": [
+                    {
+                        "uid": "1604621893633516:81996",
+                        "path_list": [
+                            "3D ROOM TEXTURES + MATERIALS MISC",
+                            "Day Night Out Windows MAT"
+                        ]
+                    }
                 ]
             }
         },
