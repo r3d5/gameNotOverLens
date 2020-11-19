@@ -1,10 +1,18 @@
 // -----JS CODE-----
 //@input Component.AnimationMixer fatherAnim
 //@input Component.AnimationMixer boyAnim
+//@input Component.AnimationMixer boyYoungAnim
+
 //@input SceneObject fatherGO
 //@input SceneObject boyPlaying
 //@input SceneObject boyCrying
 //@input SceneObject boyWalkingAwaySad
+//@input SceneObject boyWalkingBackNormal
+//@input SceneObject boyTakingConsole
+//@input SceneObject boyBringingConsole
+//@input SceneObject consoleOnTable
+//@input SceneObject consoleInTheBox
+
 
 //@input float animationWeight = 1.0 {"widget":"slider", "min": 0, "max": 1, "step": 0.01}
 //@input float animationStartOffset = 0.0
@@ -30,6 +38,8 @@ var dissolveFatherBool = false
 var boyPlaybackSpeed = 1.75
 var boyPlayingAnim = script.boyAnim.getLayers()[1];
 var boyCryingAnim = script.boyAnim.getLayers()[2];
+var boyWalkingAnim = script.boyYoungAnim.getLayers()[1];
+var youngWalkSpeed = 1
 var globalTime = 0
 var boyRotation = -8.8
 var boyPosition = 0
@@ -70,12 +80,14 @@ function init() {
 init()
 
 function startFirstScene() {
-    script.visual.mainPass.baseColor = tvOnColor;
-    //TODO: Check if anim is playing, then dont start
-    script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
-    script.fatherAnim.start(fatherPlayingLayer, script.animationStartOffset, script.numberOfLoops);
-    dissolveFather.reset(3);
-    gameStarted = true
+    if(!gameStarted) {
+        script.visual.mainPass.baseColor = tvOnColor;
+        //TODO: Check if anim is playing, then dont start
+        script.boyAnim.start(boyPlayingLayer, script.animationStartOffset, script.numberOfLoops);
+        script.fatherAnim.start(fatherPlayingLayer, script.animationStartOffset, script.numberOfLoops);
+        dissolveFather.reset(3);
+        gameStarted = true
+    }
 }
 
 script.api.startFirstScene = startFirstScene
@@ -191,9 +203,7 @@ function onUpdate(eventData) {
         }
         
         if(globalTime > 19 && globalTime < 19.1) {
-                        enableTransition = true
-
-        
+             enableTransition = true
         }
         
         if(globalTime > 19.1 && globalTime < 19.2) {
@@ -201,7 +211,55 @@ function onUpdate(eventData) {
              script.boyWalkingAwaySad.enabled = false
              dayLengthCircleSpeed = fastDayLengthCircleSpeed
              dayLengthColorSpeed = fastDayLengthColorSpeed
+              script.consoleOnTable.enabled = false
+            script.consoleInTheBox.enabled = true 
         }
+        
+        if(globalTime > 30 && globalTime < 30.1) {
+            dayLengthCircleSpeed = normalDayLengthCircleSpeed
+             dayLengthColorSpeed = normalDayLengthColorSpeed
+             enableTransition = true
+        }
+        
+        if(globalTime > 30.1 && globalTime < 30.2) {
+            script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,-90 * DEG_TO_RAD))
+             script.boyWalkingBackNormal.enabled = true
+
+        }
+        
+        if(globalTime > 30.2 && globalTime < 40) {
+             script.boyWalkingBackNormal.getTransform().setLocalPosition(new vec3(script.boyWalkingBackNormal.getTransform().getLocalPosition().x,
+                                                                      script.boyWalkingBackNormal.getTransform().getLocalPosition().y,
+                                                                      script.boyWalkingBackNormal.getTransform().getLocalPosition().z + 1.1))
+        }
+        
+        if(globalTime > 40.1 && globalTime < 40.2) {
+            enableTransition = true
+        }
+        
+         if(globalTime > 40.2 && globalTime < 40.3) {
+             script.boyWalkingBackNormal.enabled = false
+             script.boyTakingConsole.enabled = true
+        }
+        
+        if (globalTime > 45.2 && globalTime < 45.3) {
+              enableTransition = true
+        }
+        
+        if(globalTime > 45.3 && globalTime < 45.5) {
+             script.boyTakingConsole.enabled = false
+            script.consoleInTheBox.enabled = false 
+            script.boyBringingConsole.enabled = true
+        }
+        
+         if(globalTime > 45.4 && globalTime < 48.5) {
+             script.boyBringingConsole.getTransform().setLocalPosition(new vec3(script.boyBringingConsole.getTransform().getLocalPosition().x,
+                                                                      script.boyBringingConsole.getTransform().getLocalPosition().y,
+                                                                      script.boyBringingConsole.getTransform().getLocalPosition().z - 1.1))
+        }
+        
+        
+        
           
     
     }  
