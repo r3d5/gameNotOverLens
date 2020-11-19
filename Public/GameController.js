@@ -10,8 +10,11 @@
 //@input SceneObject boyWalkingBackNormal
 //@input SceneObject boyTakingConsole
 //@input SceneObject boyBringingConsole
+//@input SceneObject boyYoungPlaying
+
 //@input SceneObject consoleOnTable
 //@input SceneObject consoleInTheBox
+
 
 
 //@input float animationWeight = 1.0 {"widget":"slider", "min": 0, "max": 1, "step": 0.01}
@@ -257,6 +260,19 @@ function onUpdate(eventData) {
                                                                       script.boyBringingConsole.getTransform().getLocalPosition().y,
                                                                       script.boyBringingConsole.getTransform().getLocalPosition().z - 1.1))
         }
+        
+         if (globalTime > 48.5 && globalTime < 48.6) {
+              enableTransition = true
+        }
+        
+         if (globalTime > 48.6 && globalTime < 48.7) {
+            script.boyBringingConsole.enabled = false
+            script.consoleOnTable.enabled = true
+            script.boyYoungPlaying.enabled = true
+            script.visual.mainPass.baseColor = tvOnColor;
+        }
+        
+        
         
         
         
