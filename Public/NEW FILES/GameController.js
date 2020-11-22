@@ -11,6 +11,15 @@
 //@input SceneObject boyTakingConsole
 //@input SceneObject boyBringingConsole
 //@input SceneObject boyYoungPlaying
+//@input SceneObject posters_and_misc
+//@input SceneObject stand002_tumba
+//@input SceneObject Elka_xmas
+//@input SceneObject fatherScenePlaying
+//@input SceneObject raceALIVE
+//@input SceneObject raceGHOST
+//@input SceneObject sheet02
+//@input SceneObject tv_small
+//@input SceneObject tv_big_hd
 
 //@input SceneObject consoleOnTable
 //@input SceneObject consoleInTheBox
@@ -186,6 +195,7 @@ function onUpdate(eventData) {
     if (globalTime > 10 && globalTime < 10.1) {
          script.boyPlaying.enabled = false
          script.boyCrying.enabled = true
+         script.fatherScenePlaying.enabled = false
          script.visual.mainPass.baseColor = tvOffColor;
     }
         
@@ -197,6 +207,8 @@ function onUpdate(eventData) {
             script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,-90 * DEG_TO_RAD))
             script.boyCrying.enabled = false
             script.boyWalkingAwaySad.enabled = true
+            script.raceALIVE.enabled = false
+            script.raceGHOST.enabled = true
         }
         
         if(globalTime > 13.3 && globalTime < 19) {
@@ -215,7 +227,8 @@ function onUpdate(eventData) {
              dayLengthCircleSpeed = fastDayLengthCircleSpeed
              dayLengthColorSpeed = fastDayLengthColorSpeed
               script.consoleOnTable.enabled = false
-            script.consoleInTheBox.enabled = true 
+            script.consoleInTheBox.enabled = true
+            script.posters_and_misc.enabled = false
         }
         
         if(globalTime > 30 && globalTime < 30.1) {
@@ -227,13 +240,18 @@ function onUpdate(eventData) {
         if(globalTime > 30.1 && globalTime < 30.2) {
             script.doorGO.getTransform().setLocalRotation(quat.fromEulerAngles(0,0,-90 * DEG_TO_RAD))
              script.boyWalkingBackNormal.enabled = true
+            script.stand002_tumba.enabled = false
+            script.Elka_xmas.enabled = true
+            script.sheet02.enabled = false
+            script.tv_small.enabled = false
+            script.tv_big_hd.enabled = true
 
         }
         
         if(globalTime > 30.2 && globalTime < 40) {
              script.boyWalkingBackNormal.getTransform().setLocalPosition(new vec3(script.boyWalkingBackNormal.getTransform().getLocalPosition().x,
                                                                       script.boyWalkingBackNormal.getTransform().getLocalPosition().y,
-                                                                      script.boyWalkingBackNormal.getTransform().getLocalPosition().z + 0.70))
+                                                                      script.boyWalkingBackNormal.getTransform().getLocalPosition().z + 0.705))
         }
         
         if(globalTime > 40.1 && globalTime < 40.2) {
